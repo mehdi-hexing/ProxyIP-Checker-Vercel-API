@@ -11,7 +11,6 @@ from fastapi.responses import JSONResponse
 IP_RESOLVER = "speed.cloudflare.com"
 PATH_RESOLVER = "/meta"
 TIMEOUT = 5
-
 def get_hosting_provider(ip):
     try:
         with httpx.Client() as client:
